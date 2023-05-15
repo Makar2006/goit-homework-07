@@ -824,8 +824,7 @@ img {
   }
 }
 .footer-input {
-  width: 100%;
-  max-width: 396px;
+  width: 310px;
   height: 40px;
   color: #fff;
 
@@ -836,7 +835,7 @@ img {
   background-color: var(--bg-dr);
   padding-left: 16px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .footer-input {
     width: 396px;
   }
