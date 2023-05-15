@@ -56,12 +56,6 @@ img {
   margin: 0;
 }
 .point-team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-
   background: #fff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -317,7 +311,7 @@ img {
   padding: 0px;
   gap: 8px;
 
-  padding: 0px 0px 32px;
+  padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -706,6 +700,7 @@ img {
   background-color: var(--bg-dr);
   padding-top: 100px;
   padding-bottom: 100px;
+  margin: auto;
 }
 .footer-text {
   width: 268px;
@@ -741,14 +736,15 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .container-footer {
+    width: 588px;
     justify-content: start;
-    padding-left: 108px;
     align-items: baseline;
     gap: 72px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .container-footer {
+    width: 1158px;
     gap: 0;
     padding: 0 15px;
   }
@@ -828,7 +824,8 @@ img {
   }
 }
 .footer-input {
-  width: 398px;
+  width: 100%;
+  max-width: 396px;
   height: 40px;
   color: #fff;
 
@@ -839,9 +836,9 @@ img {
   background-color: var(--bg-dr);
   padding-left: 16px;
 }
-@media only screen and (max-width: 415px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-input {
-    width: 300px;
+    width: 396px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1124,6 +1121,11 @@ img {
     opacity var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (max-width: 400px) {
+  .modal {
+    width: 315px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
@@ -1352,7 +1354,11 @@ img {
   justify-content: space-between;
   width: 328px;
 }
-
+@media only screen and (max-width: 370px) {
+  .mobile-list {
+    width: 245px;
+  }
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1410,6 +1416,11 @@ img {
   text-transform: capitalize;
 
   color: #4d5ae5;
+}
+@media only screen and (max-width: 420px) {
+  .mobile-contacts-item-tel {
+    font-size: 25px;
+  }
 }
 .mobile-contacts-item-mail {
   font-weight: 500;
